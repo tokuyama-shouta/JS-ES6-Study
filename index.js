@@ -55,3 +55,47 @@
 // const username = getUserName('hoge');
 // console.log(username);
 
+
+// map 
+
+const array = [1,2,4,8];
+const resultArray = array.map(x => x * 2);
+console.log(resultArray)
+
+const object = {
+  "hoge": {text: "fuga"},
+  "foo": {text: "bar"},
+  "fiz": {text: "buzz"}
+};
+
+const objectToArray = Object.keys(object).map(key => {
+  const value = object[key]
+  value['id'] = key 
+  console.log(value)
+  return value
+})
+console.log(objectToArray);
+
+
+
+//filter
+
+const objectArray = [
+  {id: "hoge", text: "fuga"},
+  {id: "foo", text: "bar"},
+  {id: "fiz", text: "buzz"},
+];
+
+const result = objectArray.filter(object => {
+  return object.id === 'hoge';
+});
+console.log(result[0].text)
+
+
+//findIndex
+
+const index = objectArray.findIndex(object => {
+  return object.id === 'hoge'
+})
+
+console.log(index,objectArray[index]);
