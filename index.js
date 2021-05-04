@@ -173,3 +173,5 @@
 // }
 // getGitUsername()
 //do
+
+//データ型
