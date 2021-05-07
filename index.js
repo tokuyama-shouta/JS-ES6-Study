@@ -176,3 +176,13 @@
 //gg
 
 //データ型
+
+const condition = true;
+
+if (condetion) {
+  const x = 100;
+  const y = 0.5 * x ** 2;
+  console.log(y);
+
+}
+console.log('出力します。');
