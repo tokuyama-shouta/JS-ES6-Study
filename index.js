@@ -177,12 +177,53 @@
 
 //データ型
 
-const condition = true;
+// const condition = true;
 
-if (condetion) {
-  const x = 100;
-  const y = 0.5 * x ** 2;
-  console.log(y);
+// if (condetion) {
+//   const x = 100;
+//   const y = 0.5 * x ** 2;
+//   console.log(y);
 
+// }
+// console.log('出力します。');
+
+// let x = 100;
+// let y = 30;
+// console.log(x + y);
+// console.log(x * y);
+// {
+//   //ブロックスコープの中
+//   let = 1;
+//   console.log(x);
+//   {
+//     //ブロックスコープの中の中
+//   }
+// }
+ 
+// let x = 0;
+// while(x > 10){
+//   //処理
+//   console.log(`現在の値は${x}です。`);
+//   x++;
+// };
+
+
+// for(let x = 1; x < 10; x++) {
+//   let row = "";
+//   for(let y = 1; y < 10; y++) {
+//     row += `${x * y} `;
+//   }
+//  console.log(row);
+// }
+
+for(let x = 1; x <=100; x++) {
+  if(x % 15 === 0) {
+    console.log('FizzBuzz');
+  } else if (x % 5 === 0) {
+    console.log('Buzz');
+  }else if(x % 3 === 0){
+    console.log(('Fizz'));
+  }else{
+    console.log(x);
+  }
 }
-console.log('出力します。');
