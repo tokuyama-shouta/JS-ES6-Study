@@ -235,4 +235,4 @@ const max = (x, y) => {
   return x;
 }
 
-console.log(max(5, 2));
+console.log(max(5, 7));
