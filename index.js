@@ -228,11 +228,50 @@
 //   }
 // }
 
-const max = (x, y) => {
-  if(x < y) {
-    return y;
-  }
-  return x;
+// const max = (x, y) => {
+//   if(x < y) {
+//     return y;
+//   }
+//   return x;
+// }
+
+// console.log(max(5, 7));
+
+// function max(x, y) {
+//   if(x < y) {
+//     return y;
+//   }
+//   return x;
+// }
+
+// console.log(max(5, 7));
+
+// const ageToType = (age) => {
+//   if(age < 3) {
+//     return '赤ちゃん';
+//   }else if (age < 18) {
+//     return '子供'
+//   }else if (age < 65){
+//     return '大人';
+//   }else{
+//     return 'お年寄り'
+//   }
+// }
+
+const FizzBuzz = (x) => {
+  
+    if(x % 15 === 0) {
+      return 'FizzBuzz!';
+    } else if (x % 5 === 0) {
+      return 'Buzz!'
+    }else if(x % 3 === 0){
+      return 'Fizz!'
+    }else{
+      return x;
+    }
 }
 
-console.log(max(5, 7));
+for (let i = 1; i <= 100; i++){
+  console.log(FizzBuzz(i));
+  
+}
