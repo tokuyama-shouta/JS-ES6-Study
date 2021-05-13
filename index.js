@@ -258,20 +258,28 @@
 //   }
 // }
 
-const FizzBuzz = (x) => {
+// const FizzBuzz = (x) => {
   
-    if(x % 15 === 0) {
-      return 'FizzBuzz!';
-    } else if (x % 5 === 0) {
-      return 'Buzz!'
-    }else if(x % 3 === 0){
-      return 'Fizz!'
-    }else{
-      return x;
-    }
+//     if(x % 15 === 0) {
+//       return 'FizzBuzz!';
+//     } else if (x % 5 === 0) {
+//       return 'Buzz!'
+//     }else if(x % 3 === 0){
+//       return 'Fizz!'
+//     }else{
+//       return x;
+//     }
+// }
+
+// for (let i = 1; i <= 100; i++){
+//   console.log(FizzBuzz(i));
+  
+// }
+
+const downtown = {
+  name: 'ダウンタウン',
+  boke: '松本',
+  tsukkomi:'浜田'
 }
 
-for (let i = 1; i <= 100; i++){
-  console.log(FizzBuzz(i));
-  
-}
+console.log(downtown.boke);
