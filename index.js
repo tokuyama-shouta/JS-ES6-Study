@@ -279,7 +279,9 @@
 const downtown = {
   name: 'ダウンタウン',
   boke: '松本',
-  tsukkomi:'浜田'
+  tsukkomi:'浜田',
+  introduce () {
+    console.log(`コンビ名は${this.name}です。`)
+  }
 }
-
-console.log(downtown.boke);
+downtown.introduce();
