@@ -276,12 +276,26 @@
   
 // }
 
-const downtown = {
-  name: 'ダウンタウン',
-  boke: '松本',
-  tsukkomi:'浜田',
-  introduce () {
-    console.log(`コンビ名は${this.name}です。`)
-  }
+// const downtown = {
+//   name: 'ダウンタウン',
+//   boke: '松本',
+//   tsukkomi:'浜田',
+//   introduce () {
+//     console.log(`コンビ名は${this.name}です。`)
+//   }
+// }
+// downtown.introduce();
+
+const arr = ['あ','い','う'];
+console.log(arr[0]);
+
+for (const shougn of tokugawa){
+  console.log("aaa");
+  
 }
-downtown.introduce();
+
+for(let i = 0; i < tokugawa.length; i++){
+  const shougun = tokugawa[i];
+  console.log('iiii');
+  
+}
