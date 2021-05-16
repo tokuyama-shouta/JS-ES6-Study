@@ -286,16 +286,45 @@
 // }
 // downtown.introduce();
 
-const arr = ['あ','い','う'];
-console.log(arr[0]);
+// const arr = ['あ','い','う'];
+// console.log(arr[0]);
 
-for (const shougn of tokugawa){
-  console.log("aaa");
+// for (const shougn of tokugawa){
+//   console.log("aaa");
   
-}
+// }
 
-for(let i = 0; i < tokugawa.length; i++){
-  const shougun = tokugawa[i];
-  console.log('iiii');
+// for(let i = 0; i < tokugawa.length; i++){
+//   const shougun = tokugawa[i];
+//   console.log('iiii');
   
-}
+// }
+
+// const array = [5,7,2,4];
+// const value = 6;
+
+// const L = array.length;
+
+// let included = false;
+
+// for(let i = 0; i < L; i++) {
+//   if(array[i] === value){
+//     included = true;
+//     break;
+//   }
+// }
+
+// const message = included ? 'YES' : 'NO';
+// console.log(message);
+
+const arr = [1,2,3,4,5,];
+
+// const f = (x) => {
+//   return 100 * x;
+// };
+const mapped = arr.map((x) => {
+  return `x = ${x}`;
+});
+console.log(mapped);
+console.log(arr);
+
