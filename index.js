@@ -317,7 +317,7 @@
 // const message = included ? 'YES' : 'NO';
 // console.log(message);
 
-const arr = [1,2,3,4,5,];
+const arr = [1,2,3,4,5,6];
 
 // const f = (x) => {
 //   return 100 * x;
