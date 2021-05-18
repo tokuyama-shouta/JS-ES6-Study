@@ -317,14 +317,54 @@
 // const message = included ? 'YES' : 'NO';
 // console.log(message);
 
-const arr = [1,2,3,4,5,6];
+// const arr = [1,2,3,4,5,6];
 
 // const f = (x) => {
 //   return 100 * x;
 // };
-const mapped = arr.map((x) => {
-  return `x = ${x}`;
-});
-console.log(mapped);
+// const mapped = arr.map((x) => {
+//   return `x = ${x}`;
+// });
+// console.log(mapped);
+// console.log(arr);
+
+const arr = [1,2,3,4,5,6];
+
+const f = (x) => {
+  return x % 2 === 0;
+};
+
+const filtered = arr.filter(f);
+console.log(filtered);
 console.log(arr);
+
+const arr = [1,2,3,4,5,6];
+
+const f = (x) => {
+  return x % 2 === 0;
+};
+
+const filtered = arr.reduce(f);
+console.log(reduce);
+console.log(arr);
+
+const MAX_NUM = 1000;
+const END = MAX_NUM + 1;
+
+for(let i = 2; i < END; i++){
+  for(let j = 2; j <= i j++){
+    if(j === i){
+      console.log(i);
+      
+    }
+
+    if(i % j === 0){
+      break;
+    }
+  }
+}
+
+
+
+
 
