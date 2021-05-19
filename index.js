@@ -328,41 +328,87 @@
 // console.log(mapped);
 // console.log(arr);
 
-const arr = [1,2,3,4,5,6];
+// const arr = [1,2,3,4,5,6];
 
-const f = (x) => {
-  return x % 2 === 0;
-};
+// const f = (x) => {
+//   return x % 2 === 0;
+// };
 
-const filtered = arr.filter(f);
-console.log(filtered);
-console.log(arr);
+// const filtered = arr.filter(f);
+// console.log(filtered);
+// console.log(arr);
 
-const arr = [1,2,3,4,5,6];
+// const arr = [1,2,3,4,5,6];
 
-const f = (x) => {
-  return x % 2 === 0;
-};
+// const f = (x) => {
+//   return x % 2 === 0;
+// };
 
-const filtered = arr.reduce(f);
-console.log(reduce);
-console.log(arr);
+// const filtered = arr.reduce(f);
+// console.log(reduce);
+// console.log(arr);
+
+// const MAX_NUM = 1000;
+// const END = MAX_NUM + 1;
+
+// for(let i = 2; i < END; i++){
+//   for(let j = 2; j <= i j++){
+//     if(j === i){
+//       console.log(i);
+      
+//     }
+
+//     if(i % j === 0){
+//       break;
+//     }
+//   }
+// }
 
 const MAX_NUM = 1000;
 const END = MAX_NUM + 1;
+const primes = new Array(END);
+primes.fill(true);
 
-for(let i = 2; i < END; i++){
-  for(let j = 2; j <= i j++){
-    if(j === i){
-      console.log(i);
-      
-    }
+primes[0] = false;
+primes[1] = false;
 
-    if(i % j === 0){
-      break;
+for (let i = 0; i < END ** 0.5; i++){
+  if(primes[i]) {
+    for(let j = 2 * i; j < END; j = j + i) {
+      primes[j] = false;
     }
   }
 }
+
+for (let i = 0; i < END; i++) {
+  if(primes[i]) {
+    console.log(i);
+  }
+}
+
+const selectionSort = (A) => {
+  const L = arr.length;
+  for(let i = 0; i < L; i++){
+    let min = i;
+    for(let j = i + 1; j < L; j++){
+      if(A[min] > A[j]){
+        min = j;
+      }
+    }
+    const tmp = A[i];
+    A[i] = A[min];
+    A[min] = tmp;
+  }
+  return A;
+}
+const arr = [1,5,7,2,1,3,4,5,7,8,1,3,5,2];
+const sorted = sort(arr);
+console.log(sorted);
+
+const [a,b] = [1,2];
+console.log(a);
+console.log(b);
+
 
 
 
